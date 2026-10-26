@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QA 테스트 체크리스트</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">GitHub Practice Project</p>
+      <h1>QA 테스트 체크리스트</h1>
+      <p class="description">테스트 항목을 완료할 때마다 체크해 보세요.</p>
+    </header>
+
+    <section class="panel" aria-labelledby="checklist-title">
+      <div class="panel-heading">
+        <h2 id="checklist-title">로그인 기능 테스트</h2>
+        <span id="progress-text" aria-live="polite">0 / 5 완료</span>
+      </div>
+      <progress id="progress-bar" value="0" max="5" aria-label="테스트 완료 진행률"></progress>
+      <ul id="checklist">
+        <li><label><input type="checkbox" data-task="1" /> 올바른 계정으로 로그인할 수 있다.</label></li>
+        <li><label><input type="checkbox" data-task="2" /> 틀린 비밀번호를 입력하면 오류 메시지가 표시된다.</label></li>
+        <li><label><input type="checkbox" data-task="3" /> 아이디를 비우면 필수 입력 안내가 표시된다.</label></li>
+        <li><label><input type="checkbox" data-task="4" /> 로그아웃하면 로그인 화면으로 이동한다.</label></li>
+        <li><label><input type="checkbox" data-task="5" /> 새로고침 후에도 로그인 상태가 올바르게 처리된다.</label></li>
+      </ul>
+      <button id="reset-button" type="button">체크 초기화</button>
+    </section>
+
+    <footer>HTML · CSS · JavaScript 연습용 샘플 프로젝트</footer>
+  </main>
+</body>
+</html>
